@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07050d"><link rel="manifest" href="manifest.json"><title>XitBOoB</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<header class="top"><div><div class="brand">Xit<span>BOoB</span><small class="by">by BOB</small></div></div><div class="status">● SERVER ONLINE</div></header>
+
+<section id="login" class="grid">
+  <div class="card hero" style="max-width:620px;margin:auto">
+    <h1>ACCESS PORTAL</h1><p class="muted">Enter your access code to continue.</p>
+    <div style="height:14px"></div>
+    <input id="code" class="input" placeholder="XITB-XXXX-XXXX" autocomplete="off">
+    <div style="height:12px"></div>
+    <button class="btn" style="width:100%" onclick="login()">LOGIN</button>
+    <p id="loginMsg" class="muted" style="margin-top:12px">Secure session · HTTPS-ready architecture</p>
+  </div>
+</section>
+
+<section id="main" style="display:none">
+  <div class="nav">
+    <button class="pill active" onclick="showTab('home',this)">HOME</button>
+    <button class="pill" onclick="showTab('features',this)">FEATURES</button>
+    <button class="pill" onclick="showTab('device',this)">DEVICE</button>
+  </div>
+
+  <div id="home" class="grid">
+    <div class="card hero"><h2>Welcome back</h2><p class="muted">XitBOoB session is active.</p><div style="margin-top:14px"><span class="tag active">ACTIVE</span></div></div>
+    <div class="card two"><h3>Session</h3><p class="muted">Access code</p><b id="sessionCode">—</b><p class="muted" style="margin-top:12px">Status</p><span class="tag active">AUTHORIZED</span></div>
+    <div class="card two"><h3>Voice Feedback</h3><p class="muted">Toggle feedback uses a short browser voice cue.</p><button class="btn secondary" onclick="say('XitBOoB ready')">TEST VOICE</button></div>
+  </div>
+
+  <div id="features" class="grid" style="display:none">
+    <div class="card two"><h2>AIM</h2>
+      <div id="aimList"></div>
+    </div>
+    <div class="card two"><h2>ESP</h2>
+      <div id="espList"></div>
+    </div>
+    <div class="card two"><h2>GAME</h2>
+      <div id="gameList"></div>
+    </div>
+  </div>
+
+  <div id="device" class="grid" style="display:none">
+    <div class="card hero"><h2>DEVICE INFO</h2><p class="muted">Live browser/device telemetry available to the prototype.</p></div>
+    <div class="card three"><h3>Battery</h3><b id="battery">Unavailable</b></div>
+    <div class="card three"><h3>Platform</h3><b id="platform">—</b></div>
+    <div class="card three"><h3>Memory</h3><b id="memory">—</b></div>
+    <div class="card three"><h3>Screen</h3><b id="screen">—</b></div>
+    <div class="card three"><h3>Network</h3><b id="network">—</b></div>
+    <div class="card three"><h3>Language</h3><b id="lang">—</b></div>
+  </div>
+</section>
+<div class="footer">XitBOoB · by BOB · UI prototype</div>
+</main><script src="app.js"></script></body></html>
