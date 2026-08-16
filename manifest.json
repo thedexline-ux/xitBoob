@@ -1,8 +1,32 @@
 {
   "name": "XitBOoB",
   "short_name": "XitBOoB",
-  "start_url": "./",
+  "description": "XitBOoB web application",
+  "id": "/xitBoob/",
+  "start_url": "/xitBoob/",
+  "scope": "/xitBoob/",
   "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en",
+  "dir": "ltr",
   "theme_color": "#07050d",
-  "background_color": "#07050d"
+  "background_color": "#07050d",
+  "categories": [
+    "utilities",
+    "games"
+  ],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
